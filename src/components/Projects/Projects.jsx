@@ -6,7 +6,7 @@ import travelFreely from "../../Assets/Projects/travel.png";
 import doge from "../../Assets/Projects/doge.png";
 import kurakani from "../../Assets/Projects/kurakani.jpeg";
 import conceptTwo from "../../Assets/Projects/concept-two.jpeg";
-
+import logicloud from "../../Assets/Projects/logicloud.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -19,6 +19,15 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={logicloud}
+              isBlog={false}
+              title="LogiCloud"
+              description="A complete business management system for small to mid sized businesses in nepal.With go with graphql as backend and react on the frontend."
+              ghLink="https://github.com/regmibishal42/logicloud_frontend"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={kurakani}
